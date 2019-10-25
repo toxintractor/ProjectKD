@@ -1,50 +1,15 @@
-# Knowledge and Data
+# Knowledge and Data Project App
 
-This tutorial shows the basics for building Sem-Web apps based on what you have learnt so far.
+We made a VideoGame recommender app on basis of the tutorial app.
 
-## Goals of the tutorial
+## How the app works
 
-In this session you will learn how to:
+The app works on basis of angular. This app makes a connection with graphdb.
+If you choose a game in the list, the 12 recommended apps will apear.
 
-* set up a web-app
-* connect your web-app with your triplestore
-* create nice visualisations of your data  
-* create dynamic interactions between your web-app and your GraphDB triplestore.
+### How to get the app Working
 
-### Things we will be using
-
-* `vuDataset.ttl` as data example. This Turtle file contains only 9 triples, describing the courses each teacher is involved in.
-* HTML to generate the content in a web page
-* CSS style, following the [Bootstrap](https://getbootstrap.com/docs/4.0/components) toolkit
-* [Angular](https://angular.io/), a Javascript framework to facilitate the bindings between  
-* The [Chart.js](http://jtblin.github.io/angular-chart.js/) library to visualise data  
-
-**N.B. The information above is only for reference!!** No need to install anything, everything you need is already in the .zip file.
-
-
-## Setting up
-
-* Just download the files (`index.html`, `main.js`, `vuDataset.ttl` as well as the css + js subdir) from this directory.
-* Start your GraphDB Workbench.
-
-## Steps
-
-* Create a new repository in GraphDB, and name it `repo-VU`
-* Import the `vuDataset.ttl` dataset into this repository (Import --> RDF --> Upload RDF Files)
-* Test the following SPARQL query in your `repo-VU` repository (see `Screenshot-Query.png` from this directory)
-```
-SELECT ?teacher (COUNT(?course) AS ?nbr_courses)
-WHERE { ?teacher <http://example.org/vu/teaches> ?course }
-GROUP BY (?teacher)
-ORDER BY DESC(?nbr_courses)
-```
-* Open `index.html` in your browser
-* Give a name for your Web application, and write it in the first text field
-* Paste the GraphDB repository URL in the second text field (see `Screenshot-Repository.png` from this directory)
-* Paste the SPARQL query that you wrote before in the third text field
-* Click the button `GO!`. Now you should see a Pie Chart showing the teaching distribution between the three teachers (see `Screenshot-WebApp.png` from this directory)
-
-To understand what is happening, and play around with the interface and the queries, open `index.html` and the `main.js` in a text editor of your choice (preferably a text editor with syntax highlighting like `atom` to see clearly the code).
+* Download al the files in this repository
 
 
 ## Problems? Some trouble-shooting:
