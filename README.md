@@ -9,7 +9,10 @@ If you choose a game in the list, the 12 recommended apps will apear.
 
 ### How to get the app Working
 
-* Download al the files in this repository
+* Download all the files in this repository
+* Start a new repository and call it 18019
+* Add the "project_group6_ontology_videogames_V3" file to the repository
+* Now you can start the app by opening index.html
 
 
 ## Problems? Some trouble-shooting:
