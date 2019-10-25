@@ -4,7 +4,7 @@ We made a VideoGame recommender app on basis of the tutorial app.
 
 ## How the app works
 
-The app works on basis of angular. This app makes a connection with graphdb.
+The app works on basis of AngularJS. This app makes a connection with graphdb.
 If you choose a game in the list, the 12 recommended apps will apear.
 
 ### How to get the app Working
@@ -16,6 +16,7 @@ If you choose a game in the list, the 12 recommended apps will apear.
 
 
 ## Problems? Some trouble-shooting:
+this troubleshooting is made by joe Raad
 
 * _How to see what kind of errors I'm getting?_ --> Right click anywhere on your Web page --> click `inspect` --> click on the tab `console`
 
